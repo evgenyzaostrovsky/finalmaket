@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: $TTLakesMedium;
+  font-size: 14px;
+  line-height: 16px;
+  color: $textColorGrey;
+  padding: 20px;
+  margin-top: auto;
+
+  &__item {
+    &--left {
+      text-align: left;
+      width: 25%;
+    }
+    &--center {
+      text-align: center;
+      width: 30%;
+    }
+
+    &--right {
+      text-align: right;
+      width: 30%;
+    }
+  }
+}

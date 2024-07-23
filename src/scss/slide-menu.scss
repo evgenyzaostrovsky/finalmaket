@@ -1,0 +1,52 @@
+.slide-menu {
+  @media screen and (max-width: 320px) {
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 0;
+  }
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    display: flex;
+    overflow: scroll;
+    background-color: $bgColorGrey;
+  }
+  @media screen and (min-width: 769px) {
+    display: inline-flex;
+    overflow: scroll;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__item {
+    font-family: $TTLakesMedium;
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    height: 40px;
+    letter-spacing: -0.2px;
+    color: $textColorGrey;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin-top: 8px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 0 15px;
+
+    &:hover {
+      border-color: $borderColor;
+      background-color: $bgColorWhite;
+    }
+  }
+  &__text {
+    text-decoration: none;
+    &:link,
+    &:visited {
+      color: $textColorGrey;
+    }
+  }
+}

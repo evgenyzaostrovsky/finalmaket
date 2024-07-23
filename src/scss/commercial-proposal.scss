@@ -1,0 +1,42 @@
+.commercial-proposal {
+  @media (max-width: 768px) {
+    width: 288px;
+    margin: 16px;
+  }
+  @media (min-width: 769px) {
+    width: 421px;
+    margin: 16px;
+  }
+  &__text {
+    margin-bottom: 16px;
+    font-family: $TTLakesRegular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  &__link {
+    margin-bottom: 16px;
+    font-family: $TTLakesMedium;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    position: relative;
+    color: $textColorBlack;
+    &__link {
+      color: $textColorBlack;
+    }
+    &__visited {
+      color: $textColorBlack;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    right: -24px;
+    bottom: 0;
+    width: 22px;
+    height: 22px;
+  }
+}

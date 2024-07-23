@@ -1,0 +1,30 @@
+.header {
+  @media screen and (max-width: 320px) {
+    background-color: $bgColorWhite;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 88px;
+  }
+
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    display: inline-flex;
+    align-items: center;
+    width: 768px;
+    height: 88px;
+    justify-content: space-between;
+    background-color: $bgColorWhite;
+  }
+}
+
+header {
+  @media screen and (min-width: 769px) {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 42px;
+  }
+}

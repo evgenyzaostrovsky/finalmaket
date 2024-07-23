@@ -1,0 +1,8 @@
+import '../scss/style.scss'
+import './swiper.js'
+import './swiper2.js'
+import './swiper3.js'
+import './burger.js'
+import './feedback.js'
+import './callback.js'
+import './readmore.js'

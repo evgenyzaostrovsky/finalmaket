@@ -1,0 +1,40 @@
+.item {
+  @media (max-width: 768px) {
+    display: block;
+    padding: 10px 0 0 16px;
+    margin-bottom: 10px;
+  }
+  &__description {
+    @media (max-width: 768px) {
+      display: block;
+      margin-top: 0px;
+
+      font-family: $TTLakesRegular;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+    }
+  }
+  &__title {
+    display: block;
+
+    &--hidden {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+      }
+    }
+    @media (max-width: 768px) {
+      font-family: $TTLakesRegular;
+      font-size: 14px;
+      line-height: 16px;
+      color: #7e7e82;
+      margin-bottom: 4px;
+    }
+  }
+  &--hidden {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.servicesPrice {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 1px;
+
+  &__item {
+    @media (max-width: 768px) {
+      position: relative;
+      background-color: white;
+      width: 260px;
+      height: 200px;
+      list-style-type: none;
+      display: block;
+    }
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 16.6% 16.6% 16.6%;
+    align-items: center;
+    font-family: $TTLakesRegular;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+}
+.grid-header {
+  background: #f8f8f8 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #7e7e82 !important;
+}

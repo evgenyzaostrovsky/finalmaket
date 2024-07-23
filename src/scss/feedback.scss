@@ -1,0 +1,95 @@
+.feedback__close-button {
+  transition: all 1s;
+  cursor: pointer;
+  @media (min-width: 769px) {
+    position: relative;
+    right: 80px;
+    top: 25px;
+  }
+  &:hover {
+    transform: rotateX(360deg);
+  }
+}
+.feedback__title {
+  @media (min-width: 769px) {
+    margin-top: -20px;
+  }
+  display: flex;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 320px;
+
+  font-family: $TTLakesBold;
+
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  margin-top: 24px;
+}
+
+.feedback__title--highlight {
+  position: relative;
+  left: -20px;
+}
+.feedback__form div {
+  margin-bottom: 15px;
+}
+.feedback__form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.feedback__form input,
+.feedback__form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.feedback__text {
+  font-family: $TTLakesRegular;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+
+  margin-bottom: 20px;
+}
+.feedback__text--link {
+  color: #ea396f;
+  text-decoration: none;
+}
+.feedback__text--link:hover {
+  text-decoration: underline;
+}
+
+.feedback__message,
+.feedback__name,
+.feedback__phone,
+.feedback__email {
+  font-family: $TTLakesThin;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+}
+
+.feedback__submit {
+  display: flex;
+  justify-content: flex-end;
+  &--button {
+    background-image: url('../img/sendbutton.svg');
+    background-size: cover; /* Настройте размеры изображения по вашему усмотрению */
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 136px;
+    height: 32px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 1s all;
+    &:hover {
+      transform: rotateX(360deg);
+    }
+  }
+}

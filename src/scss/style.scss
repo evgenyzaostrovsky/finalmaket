@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'TTLakesBold';
+  src: url(../fonts/TTLakes-Bold.ttf);
+}
+@font-face {
+  font-family: 'TTLakesMedium';
+  src: url(../fonts/TTLakes-Medium.ttf);
+}
+@font-face {
+  font-family: 'TTLakesRegular';
+  src: url(../fonts/TTLakes-Regular.ttf);
+}
+@font-face {
+  font-family: 'TTLakesThin';
+  src: url(../fonts/TTLakes-Thin.ttf);
+}
+$TTLakesBold: 'TTLakesBold', sans-serif;
+$TTLakesMedium: 'TTLakesMedium', sans-serif;
+$TTLakesRegular: 'TTLakesRegular', sans-serif;
+$TTLakesThin: 'TTLakesThin', sans-serif;
+$bgColorGrey: #f8f8f8;
+$bgColorWhite: white;
+$textColorGrey: #7e7e82;
+$textColorBlack: #1b1c21;
+$borderColor: #b8ffec;
+
+@import './center-side.scss';
+@import './content.scss';
+@import './header.scss';
+@import './left-side.scss';
+@import './main.scss';
+@import './right-side.scss';
+@import './slide-menu.scss';
+@import './title.scss';
+@import './swiper_title.scss';
+@import './brands-list.scss';
+@import './showButton.scss';
+@import './swiper2_title.scss';
+@import './repairServices-list.scss';
+@import './normalize.css';
+@import './servicesPrice.scss';
+@import './item.scss';
+@import './order-button.scss';
+@import './commercial-proposal.scss';
+@import './footer.scss';
+@import './left-side-menu.scss';
+@import './wrapper.scss';
+@import './feedback.scss';
+@import './callback.scss';
+body {
+  background-color: $bgColorGrey;
+}
+@media screen and (min-width: 769px) {
+  body {
+    background-color: $bgColorGrey;
+    width: 1120px;
+    height: 100%;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  transition: all 1s;
+}

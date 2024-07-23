@@ -1,0 +1,57 @@
+.title {
+  @media screen and (max-width: 320px) {
+    display: flex;
+    background-color: $bgColorGrey;
+    width: 320px;
+  }
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    display: flex;
+    width: 768px;
+    background-color: $bgColorGrey;
+  }
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+    background-color: $bgColorGrey;
+  }
+
+  &__highlight {
+    @media screen and (max-width: 320px) {
+      padding: 0;
+      margin: 24px 0 0 0;
+    }
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+      padding: 0;
+      margin-top: 24px;
+    }
+    @media screen and (min-width: 769px) {
+      padding: 0;
+    }
+  }
+
+  &__text {
+    @media screen and (max-width: 320px) {
+      font-family: $TTLakesBold;
+      margin-left: 12px;
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: -0.6px;
+      margin-top: 24px;
+    }
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+      font-family: $TTLakesBold;
+      margin-left: 12px;
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: -0.6px;
+      margin-top: 24px;
+    }
+    @media screen and (min-width: 769px) {
+      font-family: $TTLakesBold;
+      margin-left: 30px;
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: -0.6px;
+    }
+  }
+}
