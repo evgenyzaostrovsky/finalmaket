@@ -537,6 +537,12 @@ template {
   .content__hidden--second {
     display: none; } }
 
+.content__hidden--third {
+  display: none; }
+
+.read-next__icon--rotate {
+  transform: rotateX(-180deg) translateY(17px); }
+
 @media screen and (max-width: 320px) {
   .header {
     background-color: white;
@@ -919,7 +925,7 @@ template {
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #1b1c21; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .servicesPrice__item {
         position: relative;
         background-color: white;
@@ -934,13 +940,13 @@ template {
   line-height: 16px !important;
   color: #7e7e82 !important; }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .item {
     display: block;
     padding: 10px 0 0 16px;
     margin-bottom: 10px; } }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .item__description {
     display: block;
     margin-top: 0px;
@@ -953,10 +959,10 @@ template {
   display: block; }
   .item__title--hidden {
     display: none; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .item__title--hidden {
         display: block; } }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .item__title {
       font-family: "TTLakesRegular", sans-serif;
       font-size: 14px;
@@ -964,7 +970,7 @@ template {
       color: #7e7e82;
       margin-bottom: 4px; } }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .item--hidden {
     display: none; } }
 
@@ -976,7 +982,7 @@ template {
   margin-top: 16px; }
   .order-button__item:hover {
     transform: scale(1.3); }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .order-button__item {
       position: absolute;
       bottom: 10px;
@@ -1029,22 +1035,15 @@ template {
   color: #7e7e82;
   padding: 20px;
   margin-top: auto; }
-  @media (max-width: 320px) {
-    .footer {
-      flex-direction: column;
-      text-align: center; }
-      .footer__item {
-        margin-bottom: 16px; } }
-  @media (min-width: 321px) {
-    .footer__item--left {
-      text-align: left;
-      width: 25%; }
-    .footer__item--center {
-      text-align: center;
-      width: 30%; }
-    .footer__item--right {
-      text-align: right;
-      width: 30%; } }
+  .footer__item--left {
+    text-align: left;
+    width: 25%; }
+  .footer__item--center {
+    text-align: center;
+    width: 30%; }
+  .footer__item--right {
+    text-align: right;
+    width: 30%; }
 
 .left-side-menu {
   height: auto;
